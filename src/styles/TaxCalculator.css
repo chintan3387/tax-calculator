@@ -1,0 +1,23 @@
+.tax-table {
+    margin: 2rem auto;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+}
+
+.tax-table td {
+    padding: 1rem;
+    border: none;
+}
+
+.underlined {
+    border-bottom: 1px solid #ccc !important;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
