@@ -7,12 +7,10 @@ const calculateAdditionalTax = (gross, base, rate) => {
 
 const FederalTaxTable = props => {
     const {federalTaxData, grossSalary} = props.federalTaxData;
-    const calculatedTax = calculateAdditionalTax(
-        grossSalary,
-        federalTaxData.baseAmount,
-        federalTaxData.taxRate
-    ).toFixed(2);
-    const finalTax = calculatedTax + federalTaxData.baseTax;
+    const calculatedTax = calculateAdditionalTax(grossSalary, federalTaxData.baseAmount, federalTaxData.taxRate);
+    console.log(`calculatedTax: ${calculatedTax}`);
+    console.log(`baseTax: ${federalTaxData.baseTax}`);
+    const finalTax = (calculatedTax + federalTaxData.baseTax).toFixed(2);
     return (
         <div>
             <h3>Federal Tax on your taxable Annual Income (CDN${grossSalary})</h3>
